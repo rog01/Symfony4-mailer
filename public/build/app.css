@@ -13544,7 +13544,7 @@ html {
 
 /* NAVIGATION */
 .navbar-bg {
-  background: url(/build/images/space-nav.f9a47078.jpg);
+  background: url(http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/images/space-nav.f9a47078.jpg);
   background-size: 80%;
 }
 
