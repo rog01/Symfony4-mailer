@@ -1,0 +1,54 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/runtime.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~admin_article_form~app~article_show.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~admin_article_form~app.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~app.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/app.js"
+      ],
+      "css": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/app.css"
+      ]
+    },
+    "article_show": {
+      "js": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/runtime.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~admin_article_form~app~article_show.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/article_show.js"
+      ],
+      "css": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/article_show.css"
+      ]
+    },
+    "admin_article_form": {
+      "js": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/runtime.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~admin_article_form~app~article_show.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~admin_article_form~app.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~admin_article_form.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/admin_article_form.js"
+      ],
+      "css": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~admin_article_form.css"
+      ]
+    },
+    "account": {
+      "js": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/runtime.js"
+      ],
+      "css": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/account.css"
+      ]
+    },
+    "login": {
+      "js": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/runtime.js"
+      ],
+      "css": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/login.css"
+      ]
+    }
+  }
+}
