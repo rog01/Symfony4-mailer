@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Article;
+use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\ORM\QueryBuilder;
@@ -33,6 +34,20 @@ class ArticleRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult()
         ;
+    }
+
+    /**
+     * @return Article[]
+     */
+    public function findAllPublishedLastWeekByAuthor(User $author): array
+    {
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.author = :author')
+            ->andWhere('a.publishedAt > :week_ago')
+            ->setParameter('author', $author)
+            ->setParameter('week_ago', new \DateTime('-1 week'))
+            ->getQuery()
+            ->getResult();
     }
 
     /*
