@@ -49,6 +49,16 @@
       "css": [
         "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/login.css"
       ]
+    },
+    "email": {
+      "js": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/runtime.js",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~email.js"
+      ],
+      "css": [
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/vendors~email.css",
+        "http://localhost/symfony/elearningPlatform/SymfonyCasts/7.%20code-symfony-mailer/start/public/build/email.css"
+      ]
     }
   }
 }
