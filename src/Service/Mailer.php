@@ -28,7 +28,7 @@ class Mailer
     public function sendWelcomeMessage(User $user): TemplatedEmail
     {
         $email = (new TemplatedEmail())
-            ->from(new NamedAddress('alienmailer@example.com', 'The space Bar'))
+            ->from(new NamedAddress('alienmailer@thespacebar.com', 'The space Bar'))
             ->to(new NamedAddress($user->getEmail(), $user->getFirstName()))
             ->subject('Welcome to the Space Bar!')
             ->htmlTemplate('email/welcome.html.twig')
