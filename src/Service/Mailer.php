@@ -57,6 +57,7 @@ class Mailer
                 'author' => $author,
                 'articles' => $articles,
             ])
+            //->attachFromPath('/path/to/file.pdf')
             ->attach($pdf, sprintf('weekly-report-%s.pdf', date('Y-m-d')));
 
         $this->mailer->send($email);
