@@ -40,4 +40,25 @@ class MailerTest extends KernelTestCase
         $this->assertSame('Victor', $namedAddresses[0]->getName());
         $this->assertSame('victor@symfonycasts.com', $namedAddresses[0]->getAddress());
     }
+
+    public function testIntegrationSendAuthorWeeklyReportMessage()
+    {
+        self::bootKernel();
+        $symfonyMailer = $this->createMock(MailerInterface::class);
+        $symfonyMailer->expects($this->once())
+            ->method('send');
+        $pdf = self::$container->get(Pdf::class);
+        $twig = self::$container->get(Environment::class);
+        $entrypointLookup = $this->createMock(EntrypointLookupInterface::class);
+
+        $user = new User();
+        $user->setFirstName('Victor');
+        $user->setEmail('victor@symfonycasts.com');
+        $article = new Article();
+        $article->setTitle('Black Holes: Ultimate Party Pooper');
+
+        $mailer = new Mailer($symfonyMailer, $twig, $pdf, $entrypointLookup);
+        $email = $mailer->sendAuthorWeeklyReportMessage($user, [$article]);
+        $this->assertCount(1, $email->getAttachments());
+    }
 }
